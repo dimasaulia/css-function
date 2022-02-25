@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&family=Oswald:wght@300;500&display=swap');
 
 :root {
+    font-size: 18px;
     --dark-1: #1E1E2C;
     --dark-2: #29283D;
     --dark-3: #222133;
