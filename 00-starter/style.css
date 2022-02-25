@@ -63,7 +63,10 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 30%;
+}
 
+.illustrationBox p {
+    width: 250px;
 }
 
 .imgContainer {
