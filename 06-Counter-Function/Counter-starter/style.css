@@ -1,0 +1,105 @@
+/* DEFAULT */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&family=Oswald:wght@300;500&display=swap');
+
+:root {
+    font-size: 18px;
+    --dark-1: #1E1E2C;
+    --dark-2: #29283D;
+    --dark-3: #222133;
+    --light: #e2e2e2;
+    --border-line: 1px solid rgba(226, 226, 226, 0.3);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1,
+p {
+    margin-bottom: 15px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+body {
+    align-items: center;
+    background: var(--dark-1);
+    color: #e2e2e2;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fira Code', sans-serif;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+.containerBox {
+    background-color: var(--dark-2);
+    border: var(--border-line);
+    border-radius: 16px;
+    display: flex;
+    height: 90vh;
+    overflow: hidden;
+    width: 1200px;
+}
+
+.experimentBox {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+}
+
+.illustrationBox {
+    align-items: center;
+    background-color: var(--dark-3);
+    border-left: 1px solid rgba(226, 226, 226, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+}
+
+.illustrationBox p {
+    width: 250px;
+}
+
+.imgContainer {
+    background: var(--light);
+    border-radius: 16px;
+    height: 400px;
+    overflow: hidden;
+    width: 80%;
+}
+
+/* END DEFAULT */
+
+/* */
+.box {
+    align-items: center;
+    border: var(--border-line);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10px;
+    width: 30%;
+}
+
+.box h2 {
+    margin-bottom: 30px;
+}
+
+/* COUNTER */
+
+/* COUNTERS */
+
+/* SYMBOLS */
