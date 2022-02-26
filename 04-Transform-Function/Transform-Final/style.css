@@ -1,0 +1,185 @@
+/* DEFAULT */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&family=Oswald:wght@300;500&display=swap');
+
+:root {
+    font-size: 18px;
+    --dark-1: #1E1E2C;
+    --dark-2: #29283D;
+    --dark-3: #222133;
+    --light: #e2e2e2;
+    --border-line: 1px solid rgba(226, 226, 226, 0.3);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1,
+p {
+    margin-bottom: 15px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+body {
+    align-items: center;
+    background: var(--dark-1);
+    color: #e2e2e2;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fira Code', sans-serif;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+.containerBox {
+    background-color: var(--dark-2);
+    border: var(--border-line);
+    border-radius: 16px;
+    display: flex;
+    height: 90vh;
+    overflow: hidden;
+    width: 1200px;
+}
+
+.experimentBox {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+}
+
+.illustrationBox {
+    align-items: center;
+    background-color: var(--dark-3);
+    border-left: 1px solid rgba(226, 226, 226, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+}
+
+.illustrationBox p {
+    width: 250px;
+}
+
+.imgContainer {
+    background: var(--light);
+    border-radius: 16px;
+    height: 400px;
+    overflow: hidden;
+    width: 80%;
+}
+
+/* END DEFAULT */
+
+/* Tranform Function */
+.box {
+    align-items: center;
+    border: var(--border-line);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10px;
+    width: 30%;
+}
+
+.box h2 {
+    margin-bottom: 30px;
+}
+
+/* Rotate */
+.arrow {
+    border-left: var(--border-line);
+    border-top: var(--border-line);
+    cursor: pointer;
+    height: 50px;
+    transform: rotate(-135deg);
+    transition: transform 0.4s ease;
+    width: 50px;
+}
+
+.arrow:hover {
+    transform: rotate(45deg);
+}
+
+/* Sacale */
+input[type=submit] {
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 10px 50px;
+    transition: transform 0.4s ease;
+}
+
+input[type=submit]:active {
+    background: var(--light);
+    transform: scale(.95);
+}
+
+/* TRANSLATE */
+
+.translate {
+    background: var(--light);
+    border-radius: 16px;
+    cursor: pointer;
+    height: 70%;
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+}
+
+.translate img {
+    /* display: none; */
+    transform: scale(4) translate(-23px, -10px);
+    transition: transform 0.4s ease;
+    z-index: -1;
+}
+
+.translate p {
+    bottom: 50%;
+    color: var(--light);
+    opacity: 0;
+    position: absolute;
+    right: 50%;
+    text-align: center;
+    transform: translate(50%, 30%);
+    transition: 0.4s ease;
+    width: 50%;
+    z-index: 1;
+}
+
+.shadow {
+    background: linear-gradient(0deg, #C56F55 1%, rgba(255, 255, 255, 0.0));
+    bottom: 0;
+    height: 40px;
+    position: absolute;
+    transform: translateY(40px);
+    transition: transform 0.4s ease;
+    width: 100%;
+    z-index: 1;
+}
+
+.translate:hover .shadow {
+    transform: translateY(0);
+}
+
+.translate:hover p {
+    opacity: 1;
+    transform: translate(50%, 50%);
+}
+
+.translate:hover img {
+    transform: scale(3.8) translate(-23px, -10px);
+}
